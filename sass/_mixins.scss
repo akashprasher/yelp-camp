@@ -10,6 +10,12 @@
   }
 }
 
+@mixin media-md-h {
+  @media screen and (min-height: 1360px) {
+    @content;
+  }
+}
+
 @mixin media-lg {
   @media screen and (min-width: 1024px) {
     @content;
