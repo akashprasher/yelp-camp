@@ -1,0 +1,89 @@
+.signup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10vh repeat(2, 1fr);
+  min-height: 100vh;
+
+  &__logo-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+
+    &__back {
+      text-align: right;
+    }
+  }
+
+  &__form {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    p,
+    label {
+      color: #4b4b4b;
+    }
+
+    form {
+      padding: 2rem 0rem;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 0.8rem;
+        background-color: #d3d3d3;
+        border: none;
+      }
+
+      label,
+      input {
+        margin-bottom: 1rem;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #0e0e0e;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__quote {
+    margin-top: 1rem;
+    // padding: 1rem 0rem;
+    background-color: #ffeeee;
+    padding: 15vw;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+    }
+
+    &__detail {
+      display: flex;
+      align-items: center;
+      padding-top: 1.5rem;
+      .designation {
+        font-size: 15px;
+        color: #4b4b4b;
+        line-height: 19px;
+      }
+      img {
+        padding-right: 1rem;
+      }
+    }
+  }
+}

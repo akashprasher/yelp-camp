@@ -93,6 +93,95 @@ body {
   padding-top: 1rem;
 }
 
+.signup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10vh repeat(2, 1fr);
+  min-height: 100vh;
+}
+
+.signup__logo-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.signup__logo-nav__back {
+  text-align: right;
+}
+
+.signup__form h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.signup__form p,
+.signup__form label {
+  color: #4b4b4b;
+}
+
+.signup__form form {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup__form form input {
+  padding: 0.8rem;
+  background-color: #d3d3d3;
+  border: none;
+}
+
+.signup__form form label,
+.signup__form form input {
+  margin-bottom: 1rem;
+}
+
+.signup__form form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.signup__quote {
+  margin-top: 1rem;
+  background-color: #ffeeee;
+  padding: 15vw;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup__quote p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.signup__quote__detail {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.signup__quote__detail .designation {
+  font-size: 15px;
+  color: #4b4b4b;
+  line-height: 19px;
+}
+
+.signup__quote__detail img {
+  padding-right: 1rem;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     margin: 0vw 10vw;
@@ -127,11 +216,20 @@ body {
   .landing__logos .brands img {
     height: 30px;
   }
+  .signup {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 10vh repeat(2, 1fr);
+    min-height: 100vh;
+  }
+  .signup__logo-nav, .signup__form {
+    padding: 8vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    margin: 0vw 10vw;
+    margin: 0vw 8vw;
   }
   .landing__container {
     margin: 0vw 10vw;
@@ -158,6 +256,85 @@ body {
   }
   .landing__logos .brands {
     padding-bottom: 2rem;
+  }
+  .signup {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 10vh repeat(2, 1fr);
+    min-height: 100vh;
+  }
+  .signup__logo-nav {
+    padding-left: 8vw !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+  }
+  .signup__logo-nav__back {
+    text-align: right;
+  }
+  .signup__form {
+    padding-left: 8vw;
+  }
+  .signup__form h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .signup__form p,
+  .signup__form label {
+    color: #4b4b4b;
+  }
+  .signup__form form {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .signup__form form input {
+    padding: 0.8rem;
+    background-color: #d3d3d3;
+    border: none;
+  }
+  .signup__form form label,
+  .signup__form form input {
+    margin-bottom: 1rem;
+  }
+  .signup__form form button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .signup__quote {
+    margin-top: 1rem;
+    background-color: #ffeeee;
+    padding: 8vw;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .signup__quote p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+  .signup__quote__detail {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+  .signup__quote__detail .designation {
+    font-size: 15px;
+    color: #4b4b4b;
+    line-height: 19px;
+  }
+  .signup__quote__detail img {
+    padding-right: 1rem;
   }
 }
 
